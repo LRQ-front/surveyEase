@@ -3,7 +3,7 @@ import userReducer from './userReducer'
 import componentReducer from './componentsReducer'
 import pageInfoReducer from './pageReducer'
 import { TypedUseSelectorHook, useSelector } from 'react-redux'
-import undoable, { excludeAction, StateWithHistory } from 'redux-undo'
+import undoable, { excludeAction } from 'redux-undo'
 
 const store = configureStore({
   reducer: {

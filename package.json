@@ -36,8 +36,11 @@
     "test": "craco test --watchAll=false",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": " prettier --write 'src/**/*.{js,ts,jsx,tsx}' ",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
@@ -61,6 +64,15 @@
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
     "@craco/craco": "^7.1.0",
+    "@storybook/addon-essentials": "^7.6.4",
+    "@storybook/addon-interactions": "^7.6.4",
+    "@storybook/addon-links": "^7.6.4",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.4",
+    "@storybook/preset-create-react-app": "^7.6.4",
+    "@storybook/react": "^7.6.4",
+    "@storybook/react-webpack5": "^7.6.4",
+    "@storybook/test": "^7.6.4",
     "@types/lodash.clonedeep": "^4.5.9",
     "@types/recharts": "^1.8.28",
     "classnames": "^2.3.2",
@@ -72,6 +84,8 @@
     "prettier": "^3.1.0",
     "prop-types": "^15.8.1",
     "qrcode.react": "^3.1.0",
-    "redux-undo": "^1.1.0"
+    "redux-undo": "^1.1.0",
+    "storybook": "^7.6.4",
+    "webpack": "^5.89.0"
   }
 }
