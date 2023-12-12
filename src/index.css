@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* 取消选中画布中组件出现额外的边框，是dnd-kit库加的 */
+
+div[role='button'] {
+  outline: 0;
+}

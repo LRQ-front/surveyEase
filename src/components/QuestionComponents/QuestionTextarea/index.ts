@@ -1,0 +1,13 @@
+import Component from './Component'
+import { QuestionTextareaDefaultProps } from './interface'
+import PropComponent from './PropComponent'
+export * from './interface'
+
+//input组件配置对象
+export default {
+  title: '多行输入框',
+  type: 'questionTextarea',
+  Component,
+  PropComponent, //参数组件
+  defaultProps: QuestionTextareaDefaultProps,
+}

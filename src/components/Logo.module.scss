@@ -1,0 +1,22 @@
+.container {
+    width: 200px;
+    // margin: 12px 0;
+    line-height: 1;
+    text-align: center;
+
+    .img {
+        position: relative;
+        top: 3px;
+        width: 32px;
+        height: 32px;
+
+        vertical-align: bottom;
+    }
+
+    h1 {
+        font-size: 27px;
+        // font-size: 13px;
+        color: #f7f7f7;
+     
+    }
+}
