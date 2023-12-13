@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import styles from './MainLayout.module.scss'
 import { Layout, Spin } from 'antd'

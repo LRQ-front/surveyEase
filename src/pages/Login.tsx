@@ -33,7 +33,6 @@ function getUserInfoFromStorage() {
 const Login: FC = () => {
   const [form] = Form.useForm()
   const navigate = useNavigate()
-
   useEffect(() => {
     //获取记住的账号密码
     const { username, password } = getUserInfoFromStorage()

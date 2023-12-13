@@ -6,6 +6,7 @@ import useNavPage from '../hooks/useNavPage'
 
 const QuestionLayout: FC = () => {
   const { waitUserData } = useLoadUserInfo()
+
   //页面跳转判断
   useNavPage(waitUserData)
 

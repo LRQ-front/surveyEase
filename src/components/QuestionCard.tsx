@@ -54,10 +54,6 @@ const QuestionCard: FC<PropsTypes> = (props: PropsTypes) => {
     }
   )
 
-  // function del() {
-  //   message.success('删除成功')
-  // }
-
   //标星问卷网络请求
   const { loading, run: changStar } = useRequest(
     async () => {
@@ -98,7 +94,12 @@ const QuestionCard: FC<PropsTypes> = (props: PropsTypes) => {
       <div className={styles['button-container']}>
         <div className={styles.left}>
           <Space>
-            <Button type="text" size="small" icon={<EditOutlined></EditOutlined>}>
+            <Button
+              type="text"
+              size="small"
+              icon={<EditOutlined></EditOutlined>}
+              onClick={() => navigate(`/question/edit/${_id}`)}
+            >
               编辑问卷
             </Button>
             <Button
