@@ -27,7 +27,7 @@ const StatHeader: FC = () => {
   //缓存二维码
   const QRcodeAndLinkElm = useMemo(() => {
     if (!isPublished) return null
-    const url = `http://192.168.56.1:3000/question/${id}`
+    const url = `http://localhost:3000/question/${id}`
 
     const QRCodeElem = (
       <div>
