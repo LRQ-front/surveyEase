@@ -11,7 +11,7 @@ import { LIST_PAGESIZE, LIST_SEARCH_PARA_KEY } from '../../constants'
 const { Title } = Typography
 
 const List: FC = () => {
-  useTitle('醒雀问卷-我的问卷')
+  useTitle('Star问卷-我的问卷')
 
   const [started, setStarted] = useState(false) //是否开始加载，用于让暂无数据不显示，优化
   const [page, setPage] = useState(1)

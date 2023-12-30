@@ -37,7 +37,7 @@ const MainLayout: FC = () => {
         </Content>
       </Layout>
       <Footer className={styles.footer}>
-        Released under the MIT License. Copyright &copy; 2023-present 醒雀
+        Released under the MIT License. Copyright &copy; 2023-present Star
       </Footer>
     </Layout>
   )

@@ -20,8 +20,8 @@ const Logo: FC = () => {
     <div className={styles.container}>
       <Link to={pathname}>
         <Space>
-          <img className={styles.img} src={require('../assets/img/xq.jpg')}></img>
-          <Title>醒雀问卷</Title>
+          <img className={styles.img} src={require('../assets/img/logo.png')}></img>
+          <Title>Star问卷</Title>
         </Space>
       </Link>
     </div>
