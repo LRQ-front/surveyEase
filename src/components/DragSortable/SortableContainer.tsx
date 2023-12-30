@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, ReactElement } from 'react'
 import {
   DndContext,
   closestCenter,
@@ -11,10 +11,9 @@ import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 
 type PropsType = {
   items: Array<{ id: string; [key: string]: any }>
-  children: JSX.Element | JSX.Element[] //渲染的内容由外部传进来，实现可复用，项目中由不同可拖拽的子元素
+  children: React.JSX.Element | React.JSX.Element[] //渲染的内容由外部传进来，实现可复用，项目中由不同可拖拽的子元素
   onDragend: (oldIndex: number, newIndex: number) => void
 }
-
 const SortableItem: FC<PropsType> = (props: PropsType) => {
   const { children, items, onDragend } = props
 
